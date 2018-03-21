@@ -4,3 +4,4 @@
 
 . install/apt.sh
 . install/snap.sh
+. install/sdkman.sh
