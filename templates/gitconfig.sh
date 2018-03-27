@@ -4,8 +4,8 @@
 
 cat << EOF
 [user]
-    email = $EMAIL
-    name = $NAME
+    email = ${EMAIL}
+    name = ${NAME}
 
 [color]
     ui = true
@@ -39,8 +39,8 @@ cat << EOF
     lg = log --decorate
 
 [core]
-    pager = more
-    editor = vim
+    pager = ${PAGER}
+    editor = ${EDITOR}
 
 [i18n]
     logOutputEncoding = utf8
