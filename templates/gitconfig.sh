@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. ./settings/gitconfig.properties
+. ./templates/settings/gitconfig.properties
 
 cat << EOF
 [user]
