@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 declare -a snaplist=(
+    "datagrip"
+    "intellij-idea-ultimate"
     "spotify"
     "gitkraken"
 )
