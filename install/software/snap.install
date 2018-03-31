@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 declare -a snaplist=(
-    "datagrip"
-    "intellij-idea-ultimate"
     "spotify"
     "gitkraken"
 )
 
 declare -a snaplistclassic=(
+    "datagrip"
+    "intellij-idea-ultimate"
     "slack"
 )
