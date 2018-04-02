@@ -11,5 +11,5 @@ fi
 
 for i in "${sdklist[@]}"
 do
-    yes | sdk install "${i}"
+    yes | sdk install ${i}
 done

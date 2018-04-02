@@ -4,5 +4,6 @@ declare -a aptlist=(
     "curl"
     "vim"
     "git"
+    "tmux"
     "tree"
 )
