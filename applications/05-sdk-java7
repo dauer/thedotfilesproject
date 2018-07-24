@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+[[ -s "/home/thomas/.sdkman/bin/sdkman-init.sh" ]] && source "/home/thomas/.sdkman/bin/sdkman-init.sh"
+
+#source /home/thomas/.bashrc
+if [ ! $JAVA_HOME ]; then
+    sdk install java 7.0.181-zulu
+fi

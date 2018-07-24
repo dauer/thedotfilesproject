@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ ! -e "/etc/sysctl.d/idea.conf" ]
+then
+	sudo sh -c 'echo "fs.inotify.max_user_watches = 524288" >> /etc/sysctl.d/idea.conf'
+	sudo sysctl -p --system
+fi
+
+snap install intellij-idea-ultimate --classic
