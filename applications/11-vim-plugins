@@ -1,9 +1,36 @@
 #!/usr/bin/env bash
 
-# Nova - Vim color scheme
-
 # Pathogen - Vim plugin manager
+if grep -q "execute pathogen" ~/.vimrc; then
+    echo "Skipping Pathogen... allready installed!"
+else
+    mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+    echo "execute pathogen#infect()" >> ~/.vimrc
+    echo ""                          >> ~/.vimrc
+fi
 
 # NerdTree - Vim file explorer
+if grep -q "NERDTree" ~/.vimrc; then
+    echo "Skipping NerdTree... allready installed!"
+else
+    git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+
+    echo "autocmd vimenter * NERDTree" >> ~/.vimrc
+    echo "autocmd VimEnter * wincmd p" >> ~/.vimrc
+    echo "let NERDTreeShowHidden=1"    >> ~/.vimrc
+    echo ""                            >> ~/.vimrc
+fi
 
 # Airline - Vim status line
+if grep -q "airline" ~/.vimrc; then
+    echo "Skipping Airline.... allready installed!"
+else
+    git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+
+    echo "let g:airline_right_alt_sep = ''" >> ~/.vimrc
+    echo "let g:airline_right_sep = ''"     >> ~/.vimrc
+    echo "let g:airline_left_alt_sep= ''"   >> ~/.vimrc
+    echo "let g:airline_left_sep = ''"      >> ~/.vimrc
+fi
