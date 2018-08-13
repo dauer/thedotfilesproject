@@ -34,3 +34,10 @@ else
     echo "let g:airline_left_alt_sep= ''"   >> ~/.vimrc
     echo "let g:airline_left_sep = ''"      >> ~/.vimrc
 fi
+
+# Elixir lang support
+if [ -d ~/.vim/bundle/vim-elixir ]; then
+    echo "Skipping Elixir... allready indtalled!"
+else
+    git clone https://github.com/elixir-lang/vim-elixir.git ~/.vim/bundle/vim-elixir
+fi
