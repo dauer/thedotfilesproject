@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-#source ~/.bashrc
-[[ -s "/home/thomas/.sdkman/bin/sdkman-init.sh" ]] && source "/home/thomas/.sdkman/bin/sdkman-init.sh"
-
-if [ ! $GROOVY_HOME ]; then
-    sdk install groovy
-fi

@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-yes | sudo apt-get install network-manager-openconnect-gnome network-manager-openconnect openconnect vpnc openvpn vpnc-scripts
