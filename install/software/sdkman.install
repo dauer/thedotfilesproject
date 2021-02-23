@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-declare -a sdklist=(
-    "groovy"
-    "gradle"
-    "grails 2.4.3"
-    "grails 2.4.4"
-)
