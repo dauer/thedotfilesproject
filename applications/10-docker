@@ -4,3 +4,5 @@ sudo apt install docker.io
 
 # Make Docker start automatically on system boot
 sudo systemctl enable --now docker
+
+sudo apt-get -y install docker-compose
