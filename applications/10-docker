@@ -6,3 +6,6 @@ sudo apt install docker.io
 sudo systemctl enable --now docker
 
 sudo apt-get -y install docker-compose
+
+# Now add user to the 'docker' group
+# sudo usermod -a -G docker $USER
